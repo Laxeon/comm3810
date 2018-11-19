@@ -29,6 +29,13 @@ class Armstrong:
                     product=i*product
                     productList.append(product)
         return (sorted(set(productList)))
-    #def bestMatch(self):
-        
+    def bestMatch(self):
+        case1=case.outputF- case.productOfMultiplexers() * case.inputF 
+        case2=-case.outputF +case.productOfMultiplexers() * case.inputF 
+        case3=case.outputF +case.productOfMultiplexers() * case.inputF 
+        for M2 in case.MultiplierCombinaitons():
+            for c in [case1,case2,case3]:
+                if c>0 and c/M2 < case.FloMax and c/M2>case.FloMin:
+                    return(M2,c/M2)
+                
         
